@@ -1,0 +1,67 @@
+.home-section {
+    width: 100%; /* Make sure it takes full width */
+    height: 100vh; /* Make sure it takes full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 24px;
+    position: relative;
+    
+    background-image: url('/background.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.home-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    z-index: 1;
+}
+
+.home-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-profile-pic-container {
+    margin-bottom: 30px;
+}
+
+.home-profile-pic, .home-profile-pic-placeholder {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 4px solid var(--text-primary);
+    background-color: #555; /* Placeholder color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    color: var(--text-primary);
+}
+
+.home-title {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    margin-bottom: 16px;
+}
+
+.home-subtitle {
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.home-cta {
+    margin-top: 30px; /* Subtitle එකයි button එකයි අතර ඉඩක් හදනවා */
+}
