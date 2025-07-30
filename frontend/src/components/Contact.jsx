@@ -37,7 +37,7 @@ const Contact = () => {
     <section id="contact" className="contact-section">
       <div className="contact-header">
         <h2 className="section-title">Contact Me</h2>
-        <p className="contact-subtitle">Have a question or want to work together? Leave a message!</p>
+        <p className="contact-subtitle">Have a question? Leave a message!</p>
       </div>
       <form onSubmit={handleSubmit} className="contact-form">
         <input type="text" name="name" placeholder="Your Name" value={formData.name} onChange={handleChange} required />
